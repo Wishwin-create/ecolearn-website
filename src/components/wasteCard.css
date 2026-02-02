@@ -1,0 +1,52 @@
+.waste-card{
+    width: 220px;
+    height: 280px;
+    border-radius: 15px;
+    padding:20px;
+    cursor: pointer;
+    display:flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    color:white;
+    gap:12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.waste-card:active{
+    transform: scale(0.95);
+}
+
+.waste-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.waste-icon{
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+
+.bin-box{
+    width:100%;
+    height: 120px;
+    background: white;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.bin-icon{
+    font-size:60px;
+}
+
+.card-content h3{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.card-content p{
+    font-size:14px;
+}

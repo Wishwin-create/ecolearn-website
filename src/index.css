@@ -1,0 +1,239 @@
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app{
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #7ddcff,
+    #b8f7d4,
+    #f6f9c2
+
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+h1,h2{
+
+  color:rgb(19, 156, 38);
+}
+
+
+
+.container{
+  text-align: center;
+  
+}
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  
+  transform: scale(1.03);
+}
+
+button:active{
+  transform: scale(0.97);
+}
+
+.cloud{
+  position : absolute;
+  width:120px;
+  height: 60px;
+  background: #e0f7ff;
+  border-radius: 50px;
+
+  left: -150px;
+  will-change: transform;
+
+}
+
+
+
+@keyframes moveCloud {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(calc(100vw + 300px));
+  }
+}
+
+.cloud-1 {
+  top: 80px;
+  
+  animation: moveCloud 20s linear infinite;
+}
+
+.cloud-2 {
+  top: 150px;
+  
+  animation: moveCloud 25s linear infinite;
+}
+
+
+.sun{
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  width: 90px;
+  height: 90px;
+
+  isolation: isolate;
+  z-index: 2;
+
+  animation: sunPulse 4s ease-in-out infinite;
+}
+
+/* 🌞 Sun body */
+.sun::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(circle at center, #ffdd55, #ffaa00);
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(255, 170, 0, 0.5);
+
+  z-index: 1;
+}
+
+/* ✨ Rays BEHIND */
+.sun::after{
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 140px;
+  height: 140px;
+
+  background: repeating-conic-gradient(
+    from 0deg,
+    #fde047 0deg 10deg,
+    transparent 10deg 20deg
+  );
+
+  border-radius: 50%;
+  animation: rotateSunRays 20s linear infinite;
+
+  z-index: -1;
+}
+
+
+
+@keyframes sunPulse{
+  0%{
+    transform: scale(1);
+    box-shadow: 0 0 25px rgba(253,224,71,0.7);
+  }
+
+  50%{
+    transform: scale(1.08);
+    box-shadow : 0 0 40px rgba(253,224,71,1);
+  }
+
+  100%{
+    transform: scale(1);
+    box-shadow: 0 0 25px rgba(253,224,71,0.7);
+  }
+}
+
+@keyframes rotateSunRays{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+/*Trees*/
+
+.trees{
+  position : absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  pointer-events: none;
+
+}
+
+
+/*trees style*/
+
+.tree{
+  
+  transform-origin: bottom center;
+}
+
+.tree-far{
+  width: 160px;
+  
+  animation: swayFar 6s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+.tree-mid{
+  width:120px;
+  animation:swayMid 4s ease-in-out infinite alternate;
+  z-index: 2;
+}
+
+.tree-near{
+  width:160px;
+  animation:swayNear 3s ease-in-out infinite alternate;
+  z-index: 3;
+}
+
+@keyframes swayFar{
+  0%{
+    transform: rotate(0deg) translateX(0);
+  }
+  50%{
+    transform: rotate(6deg) translateX(15px);
+  }
+  100%{
+    transform: rotate(-6deg) translateX(0);
+  }
+}
+
+@keyframes swayMid {
+  0%{
+    transform: rotate(0deg) translateX(0);
+  }
+  50%{
+    transform: rotate(4deg) translateX(10px);
+  }
+  100%{
+    transform: rotate(-4deg) translateX(0);
+  }
+  
+}
+
+@keyframes swayNear {
+  0%{
+    transform: rotate(0deg) translateX(0);
+  }
+  50%{
+    transform: rotate(6deg) translateX(15px);
+  }
+  100%{
+    transform: rotate(-6deg) translateX(0);
+  }
+  
+}

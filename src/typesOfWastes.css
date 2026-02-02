@@ -1,0 +1,39 @@
+.app-3{
+    position: relative;
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #d7f0fc, #e5fce5);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    padding-top:40px;
+    gap:30px;
+    overflow: hidden;
+}
+
+.bg-recycle{
+    position: absolute;
+    top: 50px;
+    right:20px;
+    font-size: 80px;
+    color: rgba(26, 182, 65);
+    animation: slowSpin 20s linear infinite;
+    z-index: 0;
+}
+
+@keyframes slowSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.card-container{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
