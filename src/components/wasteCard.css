@@ -1,6 +1,6 @@
 .waste-card{
-    width: 220px;
-    height: 280px;
+    width: min(220px, 100%);
+    min-height: 280px;
     border-radius: 15px;
     padding:20px;
     cursor: pointer;
@@ -49,4 +49,20 @@
 
 .card-content p{
     font-size:14px;
+}
+
+@media (max-width: 640px) {
+    .waste-card {
+        width: min(100%, 320px);
+        min-height: 250px;
+        padding: 18px;
+    }
+
+    .waste-icon {
+        font-size: 48px;
+    }
+
+    .bin-box {
+        height: 96px;
+    }
 }

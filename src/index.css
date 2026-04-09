@@ -3,8 +3,18 @@ body{
   font-family: Arial, sans-serif;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+}
+
 .app{
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(
     to bottom,
     #7ddcff,
@@ -16,6 +26,8 @@ body{
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding: 32px 20px 160px;
+  position: relative;
 }
 
 h1,h2{
@@ -27,7 +39,10 @@ h1,h2{
 
 .container{
   text-align: center;
-  
+  width: min(100%, 420px);
+  padding: 24px;
+  position: relative;
+  z-index: 3;
 }
 button {
   padding: 12px 24px;
@@ -236,4 +251,91 @@ button:active{
     transform: rotate(-6deg) translateX(0);
   }
   
+}
+
+@media (max-width: 900px) {
+  .tree-far,
+  .tree-near {
+    width: 120px;
+  }
+
+  .tree-mid {
+    width: 90px;
+  }
+
+  .sun {
+    top: 24px;
+    right: 24px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .sun::after {
+    top: -18px;
+    left: -18px;
+    width: 106px;
+    height: 106px;
+  }
+}
+
+@media (max-width: 640px) {
+  .app {
+    padding: 24px 16px 112px;
+    align-items: flex-start;
+  }
+
+  .container {
+    padding: 20px 12px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+
+  .cloud {
+    width: 84px;
+    height: 42px;
+  }
+
+  .cloud-1 {
+    top: 56px;
+  }
+
+  .cloud-2 {
+    top: 108px;
+  }
+
+  .sun {
+    top: 18px;
+    right: 18px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .sun::after {
+    top: -15px;
+    left: -15px;
+    width: 86px;
+    height: 86px;
+  }
+
+  .trees {
+    justify-content: space-between;
+    padding: 0 8px;
+  }
+
+  .tree-far,
+  .tree-near {
+    width: 84px;
+  }
+
+  .tree-mid {
+    width: 64px;
+  }
 }

@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 30px;
+    padding: 30px 20px 40px;
     gap: 20px;
     position: relative;
     
@@ -29,7 +29,7 @@ body{
     background: white;
     padding: 30px;
     border-radius: 25px;
-    width: 520px;
+    width: min(100%, 520px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
@@ -102,8 +102,9 @@ button:hover {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    width: 300px;
+    width: min(100%, 360px);
     margin: 20px auto;
+    flex-wrap: wrap;
 }
 
 .pill-container {
@@ -207,4 +208,48 @@ button:hover {
     100%{
         transform: translateY(120vh) translateX(-40px) rotate(360deg);
     }   
+}
+
+@media (max-width: 640px) {
+  .app-2 {
+    padding: 24px 16px 32px;
+  }
+
+  .title-2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .card-2 {
+    padding: 20px 16px;
+  }
+
+  .env {
+    padding: 20px 16px;
+  }
+
+  .emoji {
+    font-size: 42px;
+  }
+
+  .icons {
+    font-size: 26px;
+  }
+
+  .pill {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 18px;
+  }
+
+  .button-container {
+    width: 100%;
+  }
+
+  .back-btn,
+  .next-btn {
+    width: 100%;
+    margin-top: 0;
+  }
 }

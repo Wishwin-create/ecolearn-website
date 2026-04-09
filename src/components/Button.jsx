@@ -10,7 +10,7 @@ function Button({ text, color, onClick }) {
         fontSize: "16px",
         color: "white",
         cursor: "pointer",
-        width: "390px",
+        width: "min(390px, 100%)",
         margin: "10px auto",
         display: "block"
       }}

@@ -66,6 +66,8 @@
 
 .screen {
   padding: 40px;
+  width: min(100%, 1000px);
+  margin: 0 auto;
 }
 
 .journey-card {
@@ -74,7 +76,7 @@
   padding: 30px 40px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   margin-bottom: 40px;
-  width: 800px;
+  width: min(100%, 800px);
   margin-left: auto;
   margin-right: auto;
 }
@@ -117,6 +119,8 @@
   padding: 40px;
   color: white;
   text-align: center;
+  width: min(100%, 800px);
+  margin: 0 auto;
 }
 
 .tips-icon {
@@ -151,4 +155,48 @@ position: absolute;
   width: 80px;
   height: auto;
   animation: float 3s ease-in-out infinite;
+}
+
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .screen {
+    padding: 20px 0;
+  }
+
+  .journey-card,
+  .tips-card {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .how-container {
+    padding: 32px 16px;
+  }
+
+  .main-title {
+    margin: 10px 0 24px;
+  }
+
+  .instruction-card {
+    padding: 24px 16px;
+  }
+
+  .journey-item {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .bulb img {
+    width: 56px;
+  }
+
+  .threebooks {
+    width: min(180px, 60vw);
+    height: auto;
+  }
 }
