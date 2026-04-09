@@ -1,5 +1,5 @@
 import React from "react";
-import './WasteCard.css';
+import './wasteCard.css';
 import BinIcon from "./BinIcon";
 
 
