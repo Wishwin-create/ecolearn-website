@@ -4,6 +4,8 @@ import WastePage from "./WastePage.jsx";
 import TypesOfWastePage from "./typesOfWastes.jsx";
 import HowToRecycle from "./HowToRecycle.jsx";
 import Instructions from "./HowToUse.jsx";
+import tree1 from "./assets/tree1.png";
+import tree2 from "./assets/tree2.png";
 
 
   
@@ -46,15 +48,15 @@ function App() {
       </div>
       <div className="trees">
         {/*far trees*/}
-        <img src="src/assets/tree1.png" alt="Tree 1" className="tree tree-far"/>
-        <img src="src/assets/tree1.png" alt="Tree 2" className="tree tree-far"/>
+        <img src={tree1} alt="Tree 1" className="tree tree-far"/>
+        <img src={tree1} alt="Tree 2" className="tree tree-far"/>
         
         {/*mid trees*/}
-        <img src="src/assets/tree2.png" alt="Tree 3" className="tree tree-mid"/>
-        <img src="src/assets/tree2.png" alt="Tree 4" className="tree tree-mid"/>
+        <img src={tree2} alt="Tree 3" className="tree tree-mid"/>
+        <img src={tree2} alt="Tree 4" className="tree tree-mid"/>
         {/*near trees*/}
-        <img src="src/assets/tree1.png" alt="Tree 5" className="tree tree-near"/>
-        <img src="src/assets/tree1.png" alt="Tree 6" className="tree tree-near"/>
+        <img src={tree1} alt="Tree 5" className="tree tree-near"/>
+        <img src={tree1} alt="Tree 6" className="tree tree-near"/>
 
       </div>
       </div>

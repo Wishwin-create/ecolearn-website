@@ -5,13 +5,15 @@ import { FaMousePointer, FaBook } from "react-icons/fa";
 import { FiEye } from "react-icons/fi";
 import { BsStars } from "react-icons/bs";
 import "./HowToUse.css";
+import threebooks from "./assets/threebooks.png";
+import bulb from "./assets/bulb.png";
 
 
 
 function Instructions({goBack}) {
     return (
         <div className="how-container">
-            <img src="src/assets/threebooks.png" className="threebooks" />
+            <img src={threebooks} className="threebooks" />
             <h4 className="small-title">How to Use Ecolearn</h4>
             <h2 className="main-title"> Follow these simple instructions! 🎯</h2>
 
@@ -61,7 +63,7 @@ function Instructions({goBack}) {
             </div>
     
       <div className="bulb">
-      <img src="src/assets/bulb.png" />
+      <img src={bulb} />
       </div>
     </div>
 
