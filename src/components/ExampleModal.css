@@ -1,0 +1,54 @@
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal{
+    background: white;
+    padding:25px;
+    border-radius: 15px;
+    width:320px;
+    animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal ul{
+    text-align: left;
+    padding-left:0;
+   
+    
+}
+
+.modal li{
+    list-style:none;
+    margin:10px;
+    list-style-type: disc;
+}
+
+.close-btn{
+    margin-top: 15px;
+    padding:8px 16px;
+    border: none;
+    background: #10b981;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
