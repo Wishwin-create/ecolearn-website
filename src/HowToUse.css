@@ -212,6 +212,7 @@ position: absolute;
   .journey-item {
     align-items: flex-start;
     gap:12px;
+    text-align: left;
   }
 
   .circle {
