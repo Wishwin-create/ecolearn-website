@@ -55,7 +55,7 @@ function TypesOfWastes({goBack, goNext}) {
         />
     </div>
      <div className="button-container">
-                <button onClick={goBack} className="back-btn" style={{width:"120px"}}>
+                <button onClick={goBack} className="back-btn">
                     ←  Back 
                 </button>
 

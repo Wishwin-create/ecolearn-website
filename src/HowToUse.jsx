@@ -55,7 +55,7 @@ function Instructions({goBack}) {
     </div>
 
     <div className="button-container">
-                <button onClick={goBack} className="back-btn" style={{margin:"auto", display:"block"}}>
+                <button onClick={goBack} className="back-btn">
                     ←  Back To Home
                 </button>
 

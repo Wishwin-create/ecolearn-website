@@ -42,7 +42,7 @@ function HowToRecycle({goBack,goNext}) {
         <p>Always sort your waste correctly. When in doubt, ask an adult! Together we can make the Earth cleaner and healthier! 💚</p>
       </div>
       <div className="button-container">
-                <button onClick={goBack} className="back-btn" style={{width:"120px"}}>
+                <button onClick={goBack} className="back-btn">
                     ←  Back 
                 </button>
 
