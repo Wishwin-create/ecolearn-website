@@ -211,7 +211,12 @@ position: absolute;
 
   .journey-item {
     align-items: flex-start;
-    text-align: left;
+    gap:12px;
+  }
+
+  .circle {
+    margin-top: 2px;      
+    flex-shrink: 0;       
   }
 
   .bulb img {
