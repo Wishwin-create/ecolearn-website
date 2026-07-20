@@ -1,16 +1,75 @@
-# React + Vite
+# EcoLearn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EcoLearn is a small educational React app designed to teach children and young learners about waste management, recycling, and environmental responsibility in a fun and interactive way.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was built to help users understand:
 
-## React Compiler
+- why waste management matters
+- how different types of waste should be handled
+- how to recycle common materials correctly
+- why caring for the environment benefits everyone
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The app uses simple navigation, colorful visuals, and step-by-step learning cards to make the topic approachable and engaging.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- interactive home screen with learning flow
+- waste awareness section explaining the importance of proper disposal
+- categories of waste with educational content
+- step-by-step recycling guidance for plastic, paper, and organic waste
+- friendly, child-friendly visuals and messaging
+
+## Tech Stack
+
+- React
+- Vite
+- JavaScript
+- CSS
+
+## Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/ecolearn.git
+   ```
+
+2. Navigate to the project folder:
+
+   ```bash
+   cd ecolearn
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Build for production:
+
+   ```bash
+   npm run build
+   ```
+
+## Project Structure
+
+- `src/` contains the main React app and page components
+- `public/` contains static assets
+- `src/components/` contains reusable UI elements like buttons and cards
+
+## Purpose
+
+EcoLearn encourages environmental awareness by turning recycling education into a simple, memorable experience. It is a good example of how web apps can be used for learning, awareness, and positive habit-building.
+
+## License
+
+This project is for educational and demonstration purposes.
