@@ -71,7 +71,7 @@ The app uses simple navigation, colorful visuals, and step-by-step learning card
 EcoLearn encourages environmental awareness by turning recycling education into a simple, memorable experience. It is a good example of how web apps can be used for learning, awareness, and positive habit-building.
 
 ## Live Demo
-  https://wishwin-create.github.io/ecolearn-website/
+  https://ecolearn-website.vercel.app/
 
 ## License
 
